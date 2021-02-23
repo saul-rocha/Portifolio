@@ -53,14 +53,11 @@ header{
 }
 .social{
     display: inline;
-    position: absolute;
-    right: 10px;
-    margin: auto 5px auto 5px;
+    margin: auto 5px auto 495px;
 }
 
 .social img{
     margin: auto 5px auto 5px;
-    right: 10px;
     width: 25px;
     height: 25px;
 }
