@@ -6,6 +6,7 @@
 
 body {
     background-image: url(fundo.png);
+
 }
 
 main {
@@ -42,6 +43,7 @@ header{
 h1{
     text-align: center;
 	margin: auto;
+
 }
 
 .info{
@@ -141,4 +143,40 @@ h1{
 }
 .items h2{
     margin: 5px;
+}
+
+.item ul{
+    list-style-type: circle ;
+}
+.item li{
+    font-size: 14px;
+}
+
+.proj{
+    display: block;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #e18451;
+
+    max-width: 900px;
+    margin: 15px 5px 15px 5px;
+}
+
+
+.proj h2{
+    margin: 5px;
+}
+
+.proj img{
+    float: left;
+    margin: 5px;
+
+    width: 80px;
+    height: 80px;
+}
+.proj h3{
+    font-size: 12px;
+    color: rgb(122, 114, 114);
 }
