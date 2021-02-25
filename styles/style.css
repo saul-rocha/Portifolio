@@ -43,6 +43,7 @@ h1{
     text-align: center;
 	margin: auto;
 }
+
 .info{
     margin: auto 1px auto 15px;
     text-align: left;
@@ -115,6 +116,7 @@ h1{
 
 .skills{
     display: flex;
+    flex-wrap: wrap;
 
     max-width: 900px;
 
@@ -126,15 +128,16 @@ h1{
 
 .skills img{
     float: none;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: auto;
 }
 
 .items{
     position: relative;
-    width: 200px;
-    margin: 15px 5px 15px 5px;
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
 }
 .items h2{
     margin: 5px;
