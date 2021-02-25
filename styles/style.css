@@ -70,6 +70,9 @@ h1{
     width: 90px;
     height: 90px;
     border-radius: 50%;
+    border-width: 1px;
+    border-color: rgb(181, 0, 253);
+    border-style:groove;
 }
 .social{
     position: relative;
