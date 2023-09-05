@@ -1,186 +1,92 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 
 }
 
 body {
-    background-image: url(fundo.png);
-
+    margin: 0px;
 }
 
-main {
-    display:  block;
-
-    background-color: rgb(255, 255, 255);
-
-    max-width: 900px;
-    margin: auto;
-    padding: 10px;
-
-    border-radius: 3px;
-    border-color: rgb(181, 0, 253);
-    border-style: solid;
-    border-width: 1px;
-
+/* Estilo da barra de navegação */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 18px 0;
 }
-header{
-    display: flex;
 
-    border-radius: 5px;
-    
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    background-color: white;
-    max-width: 900px;
-    margin: 5px auto;
-    padding: 10px;
-    border-radius: 3px;
-    border-color: rgb(181, 0, 253);
-    border-style: solid;
-    border-width: 1px;
 }
 
-h1{
-    text-align: center;
-	margin: auto;
-
-}
-
-.info{
-    margin: auto 1px auto 15px;
-    text-align: left;
-}
-.info h2 {
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.info h3 {
-    font-size: 12px;
-    margin-top: auto;
-    margin-bottom: 6px;
-}
-#perfil{
-    display: block;
-
-    float: left;
-
-    margin: auto 5px auto 5px;
-
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border-width: 1px;
-    border-color: rgb(181, 0, 253);
-    border-style:groove;
-}
-.social{
-    position: relative;
-
+nav li {
     display: inline;
-    margin: auto;
+    margin-right: 20px;
 }
 
-.social img{
-    margin: auto 5px auto 5px;
-    width: 30px;
-    height: 30px;
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-
-.conteiner{
-    border-radius: 4px;
-    border-color: rgb(181, 0, 253);
-    border-style: solid;
-    border-width: 2px;
-
-    margin: 15px auto 15px auto;
-    text-align: left;
-
-    max-width: 900px;
-
-}
-.conteiner img{
-
-    float: left;
-
-    width: 90px;
-    height: 90px;
-
-    margin: 0px 15px auto auto;
-    border-radius: 50%;
-
+nav a:hover {
+    color: #ff9900;
+    /* Cor quando o mouse passa por cima */
 }
 
-.item{
-    margin: 5px;
-}
-.item h2{
-    font-size: 12px;
-}
-
-.skills{
-    display: flex;
-    flex-wrap: wrap;
-
-    max-width: 900px;
-
-    margin: 15px auto 15px auto ;
-
-    text-align: center;
-    
-}
-
-.skills img{
-    float: none;
-    width: 50px;
-    height: 50px;
-    margin: auto;
-}
-
-.items{
+/* Estilo da seção #home */
+#home {
     position: relative;
-    width: 100px;
-    margin: auto;
-    margin-top: 10px;
-}
-.items h2{
-    margin: 5px;
-    font-size: 10px;
-}
-
-.item ul{
-    list-style-type: circle ;
-}
-.item li{
-    font-size: 14px;
-}
-
-.proj{
-    display: block;
-
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 3px;
-    border-color: #e18451;
-
-    max-width: 900px;
-    margin: 15px 5px 15px 5px;
+    display: flex;
+    justify-content: flex-start;
+    /* Alinhar conteúdo à direita */
+    align-items: center;
+    height: 100vh;
+    /* Ocupa a altura total da tela */
+    overflow: hidden;
+    /* Remove qualquer parte da imagem que exceda a altura da tela */
+    background-image: url('capa1.jpg');
+    /* Define a imagem de fundo */
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir a seção */
+    background-position: left;
+    /* Define a posição da imagem à esquerda */
+    color: #fff;
+    /* Cor do texto */
 }
 
-
-.proj h2{
-    margin: 5px;
+/* Estilo do fundo escuro à esquerda */
+.background-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ocupa metade da largura da tela */
+    height: 100%;
+    /* Ocupa a altura total da tela */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Cor de fundo escura com transparência */
 }
 
-.proj img{
-    float: left;
-    margin: 5px;
-
-    width: 80px;
-    height: 80px;
+/* Estilo do conteúdo de texto dentro de .perfil */
+.perfil {
+    max-width: 100%;
+    text-align: justify;
+    /* Alinha o texto à direita */
+    margin-left: 30px;
+    /* Margem direita para o conteúdo de texto */
+    z-index: 2; /* Coloca o conteúdo acima do fundo escuro */
 }
-.proj h3{
-    font-size: 12px;
-    color: rgb(122, 114, 114);
+
+/* Estilo dos títulos (h1, h2, h3) dentro de .perfil */
+.perfil h1,
+.perfil h2,
+.perfil h3 {
+    margin: 20px 20px;
+    /* Espaçamento vertical entre os títulos */
 }
