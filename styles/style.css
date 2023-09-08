@@ -9,17 +9,52 @@ body {
 }
 
 /* Estilo da barra de navegação */
+/* Estilo da barra de navegação */
 header {
-    background-color: #333;
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 30px 0;
+    top: -60px;
+    /* Começa acima do topo da tela */
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: top 0.4s ease-in-out;
+    /* Adiciona uma transição suave para o movimento */
+}
+
+/* Estilo da barra de navegação */
+nav {
+    position: fixed;
     color: #fff;
     padding: 18px 0;
+    position: fixed;
+    top: -60px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0);
+    transition: top 0.4s ease-in-out;
+    /* Inicialmente, a barra de navegação está oculta */
 }
+
 
 nav ul {
     list-style-type: none;
+    position: fixed;
+    left: 0;
+    right: 0;
     margin: 0;
     padding: 0;
+    display: flex;
     text-align: center;
+    /* Alinha os itens horizontalmente ao centro */
+    justify-content: center;
+    /* Alinha os itens verticalmente ao centro */
+    align-items: center;
+
 }
 
 nav li {
@@ -31,7 +66,7 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
 }
 
 nav a:hover {
@@ -80,13 +115,166 @@ nav a:hover {
     /* Alinha o texto à direita */
     margin-left: 30px;
     /* Margem direita para o conteúdo de texto */
-    z-index: 2; /* Coloca o conteúdo acima do fundo escuro */
+    z-index: 2;
+    /* Coloca o conteúdo acima do fundo escuro */
 }
 
 /* Estilo dos títulos (h1, h2, h3) dentro de .perfil */
-.perfil h1,
-.perfil h2,
-.perfil h3 {
-    margin: 20px 20px;
+.perfil {
+    margin: 0% 10%;
     /* Espaçamento vertical entre os títulos */
+}
+
+.perfil h2 {
+    font-size: 3vh;
+    /* Tamanho da fonte desejado */
+    /* line-height: 0.5; */
+    /* Espaçamento entre linhas para melhor legibilidade */
+}
+
+.perfil h1 {
+    font-size: 12vh;
+    /* Tamanho da fonte desejado */
+    margin: 0vh 0vh;
+}
+
+/* Estilo do segundo h2 da home com linha laranja */
+#home .destaque::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    /* Largura da linha */
+    height: 2px;
+    /* Altura da linha */
+    background-color: orange;
+    /* Cor da linha */
+    margin-right: 5px;
+    /* Espaçamento à direita da linha */
+    vertical-align: middle;
+    /* Centraliza verticalmente */
+}
+
+/* botão de voltar ao topo */
+#btn-top {
+    display: none;
+    /* Inicialmente, oculte o botão */
+    position: fixed;
+    /* Mantém o botão fixo na tela */
+    bottom: 20px;
+    /* Distância do botão a partir da parte inferior */
+    right: 20px;
+    /* Distância do botão a partir da direita */
+    background-color: #ff8000;
+    /* Cor de fundo do botão */
+    color: #fff;
+    /* Cor do texto do botão */
+    padding: 0;
+    /* Espaçamento interno do botão */
+    border-radius: 50%;
+    /* Cantos arredondados */
+    width: 30px;
+    /* Largura do botão */
+    height: 30px;
+    /* Altura do botão */
+    text-decoration: none;
+    /* Remove a decoração de texto */
+    transition: background-color 0.3s;
+    /* Transição suave de cor */
+}
+
+#btn-top img {
+    width: 100%;
+    /* Ocupa todo o espaço disponível */
+    height: auto;
+    /* Altura automática para manter a proporção original */
+}
+
+#btn-top:hover {
+    background-color: #ffaa33;
+    /* Cor de fundo ao passar o mouse sobre o botão */
+}
+
+/* Estilo do botão "Saiba mais" */
+#btn-sobre {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* SOBRE MIM */
+/* Estilo da seção #home */
+#sobre-mim {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    /* Alinhar conteúdo à direita */
+    align-items: center;
+    height: 100vh;
+    /* Ocupa a altura total da tela */
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir a seção */
+    background-position: left;
+    /* Define a posição da imagem à esquerda */
+    color: #fff;
+    /* Cor do texto */
+    background-color: #1C1C1C;
+}
+
+#sobre-mim .destaque::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    /* Largura da linha */
+    height: 2px;
+    /* Altura da linha */
+    background-color: orange;
+    /* Cor da linha */
+    margin-right: 5px;
+    /* Espaçamento à direita da linha */
+    vertical-align: middle;
+    /* Centraliza verticalmente */
+}
+
+/* Estilo para a div de foto */
+.foto {
+    flex: 1;
+  
+    /* A foto ocupa a maior parte do espaço disponível */
+}
+
+.foto img {
+    max-width: 100%;
+    /* A imagem de foto terá uma largura máxima de 100% da div pai */
+    height: auto;
+    /* A altura será ajustada automaticamente para manter a proporção original */
+}
+
+/* Estilo para a div de texto */
+.titulo {
+    flex: 2;
+    /* A div de texto ocupa um espaço menor do que a div de foto */
+    padding: 20px;
+    /* Adicione algum espaço interno para separar o texto das bordas */
+    text-align: justify;
+    /* Alinhe o texto à esquerda */
+}
+
+.titulo h2 {
+    font-size: 3vh;
+    /* Tamanho da fonte desejado */
+    /* line-height: 0.5; */
+    /* Espaçamento entre linhas para melhor legibilidade */
+}
+
+.titulo h1 {
+    font-size: 5vh;
+    /* Tamanho da fonte desejado */
+    margin: 0vh 0vh;
 }
