@@ -209,7 +209,7 @@ nav a:hover {
 }
 
 /* SOBRE MIM */
-/* Estilo da seção #home */
+/* Estilo da seção #sobre-mim */
 #sobre-mim {
     position: relative;
     display: flex;
@@ -245,7 +245,7 @@ nav a:hover {
 /* Estilo para a div de foto */
 .foto {
     flex: 1;
-  
+
     /* A foto ocupa a maior parte do espaço disponível */
 }
 
@@ -277,4 +277,106 @@ nav a:hover {
     font-size: 5vh;
     /* Tamanho da fonte desejado */
     margin: 0vh 0vh;
+}
+
+
+/* Estilo da seção #formation */
+#formation {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    /* Alinhar conteúdo à direita */
+    align-items: center;
+    height: 100vh;
+    /* Ocupa a altura total da tela */
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir a seção */
+    background-position: left;
+    /* Define a posição da imagem à esquerda */
+    color: #fff;
+    /* Cor do texto */
+    background-color: #1C1C1C;
+}
+
+/* Estilo para cada div de formação */
+.conteiner {
+    flex: 1;
+    /* Cada div de formação ocupa a mesma largura */
+    display: flex;
+    /* Use display: flex para alinhar a imagem e o texto na vertical */
+    align-items: center;
+    /* Alinhe verticalmente a imagem e o texto no centro */
+    margin: 0 20px;
+    /* Adicione um espaçamento à direita para separar as divs */
+}
+
+/* Estilo para a imagem de formação */
+#formation div img {
+    max-width: 200px;
+
+    margin-right: 10px;
+    background-color: #ff8000;
+
+    border-radius: 15px;
+
+
+}
+
+/* Estilo para os textos de formação */
+.conteudo {
+    font-size: 18px;
+    /* Tamanho da fonte para os títulos */
+}
+
+
+/* Estilo da seção #services */
+#services {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    /* Alinhar conteúdo à direita */
+    align-items: center;
+    height: 100vh;
+    /* Ocupa a altura total da tela */
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir a seção */
+    background-position: left;
+    /* Define a posição da imagem à esquerda */
+    color: #fff;
+    /* Cor do texto */
+    background-color: #1C1C1C;
+}
+
+#services .destaque::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    /* Largura da linha */
+    height: 2px;
+    /* Altura da linha */
+    background-color: orange;
+    /* Cor da linha */
+    margin-right: 5px;
+    /* Espaçamento à direita da linha */
+    vertical-align: middle;
+    /* Centraliza verticalmente */
+}
+
+
+/* Estilo da seção #projects */
+#projects {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    /* Alinhar conteúdo à direita */
+    align-items: center;
+    height: 100vh;
+    /* Ocupa a altura total da tela */
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir a seção */
+    background-position: left;
+    /* Define a posição da imagem à esquerda */
+    color: #fff;
+    /* Cor do texto */
+    background-color: #1C1C1C;
 }
